@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 70, 70);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.grid-item{
+    border: .5px solid rgba(0, 0, 0, 0.05);
+}
+
+#colorSelector{
+    position: absolute;
+    top: 20%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    margin-left: 25%;
+
+    height: 150px;
+    width: 150px;
+    border: none;
+}
