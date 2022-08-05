@@ -39,27 +39,29 @@
     border: .5px solid rgba(0, 0, 0, 0.05);
 }
 
-#colorSelector{
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    width: 150px;
+
     position: absolute;
-    top: 20%;
+    top: 22%;
     -ms-transform: translate(-50%);
     transform: translate(-50%);
     margin-left: 25%;
+}
 
+#colorSelector{
     height: 150px;
     width: 150px;
     border: none;
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
 }
 
-#restart{
-    position: absolute;
-    top: 40%;
-    -ms-transform: translate(-50%);
-    transform: translate(-50%);
-    margin-left: 25%;
+.buttons{
     padding: .3%;
-
     width: 150px;
     border: none;
     border-radius: 10px;
@@ -67,18 +69,16 @@
     font-size: 35px;
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
 }
-
-#restart:hover{
+.buttons:hover{
     background-color: #a4acbc;
 }
 
 #size{
     height: 26px;
     width: 600px;
-    border: 2px solid black;
 
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -87,7 +87,7 @@
 
 #number{
     position: absolute;
-    top: 93%;
+    top: 100%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

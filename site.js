@@ -6,10 +6,14 @@ function start(length){
         divs.classList.add('pixel');
         container.appendChild(divs);
 
-        divs.addEventListener('mouseover', () => {
-            divs.style.backgroundColor = color;
-            divs.style.border = 'none';
-        })
+        divs.addEventListener('mousemove', function(e){
+            console.log(e);
+            if(e.buttons==1)
+            {
+                divs.style.backgroundColor = color;
+                divs.style.border = 'none';
+            }
+        });
 
     }
 
