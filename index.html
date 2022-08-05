@@ -8,9 +8,15 @@
         <title>Etch a skcetch</title>
     </head>
     <body>
+        <h1 id="title"> Etch a skcetch</h1>
 
         <input type="color" id="colorSelector">
+        <button id="restart" onclick="restartFunction();"> Restart </button>
+
         <div class="grid-container"></div>
+
+        <input type="range" id="size" name="size" min="2" max="64" step="1" value="16" onchange="updateSizePicker(this.value);">
+        <span id="number">16 x 16</span>
 
         <script src="site.js"></script>
     </body>

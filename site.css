@@ -1,7 +1,21 @@
+@font-face {
+    font-family: fuente;
+    src: url('sources/Lemon_Days.otf') format('truetype');
+  }
+
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(70, 70, 70);
+    background-color: #64747c;
+    font-family: fuente;
+}
+
+#title{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 90px;
+    background: none;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
 }
 
 .grid-container{
@@ -17,6 +31,7 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
 
 }
 
@@ -34,4 +49,48 @@
     height: 150px;
     width: 150px;
     border: none;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
+}
+
+#restart{
+    position: absolute;
+    top: 40%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    margin-left: 25%;
+    padding: .3%;
+
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: #b2b9c6;
+    font-size: 35px;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
+}
+
+#restart:hover{
+    background-color: #a4acbc;
+}
+
+#size{
+    height: 26px;
+    width: 600px;
+    border: 2px solid black;
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
+}
+
+#number{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: none;
+    font-size: 30px;
 }
